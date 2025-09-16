@@ -22,7 +22,7 @@ namespace Landis.Extensions.Admin
 
             // Linux Path separator Nov 2018
             string[] tempPath = path.Split("..");
-            string newPath = Path.Combine(tempPath[0], "../extensions/extensions.xml");
+            string newPath = Path.Combine(tempPath[0], "..", "extensions", "extensions.xml");
             //Console.WriteLine(newPath);
             // ./Linux Path separator
             
