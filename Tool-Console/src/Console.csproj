@@ -10,7 +10,7 @@
     <ApplicationIcon />
     <Win32Resource />
     <Platforms>AnyCPU;x64</Platforms>
-    <!-- <RuntimeIdentifier>linux-x64</RuntimeIdentifier> -->
+    <RuntimeIdentifier>linux-x64</RuntimeIdentifier>
     <!-- <RuntimeIdentifier>linux-x64</RuntimeIdentifier> -->
     <!-- Remove net8 folder-->
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
@@ -36,6 +36,17 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Library-Core\src\Core\Landis.Core.csproj" />
+    <ProjectReference Include="..\..\..\Library-Core\src\Implementation\Landis.Core.Implementation.csproj" />
+    <ProjectReference Include="..\..\..\Library-Datasets\src\Extension_Dataset.csproj" />
+    <ProjectReference Include="..\..\..\Library-Spatial\src\Landscapes\Landis_Landscapes.csproj" />
+    <ProjectReference Include="..\..\..\Library-Spatial\src\RasterIO\Landis_RasterIO.csproj" />
+    <ProjectReference Include="..\..\..\Library-Spatial\src\RasterIO.Gdal\Landis_RasterIO_Gdal.csproj" />
+    <ProjectReference Include="..\..\..\Library-Spatial\src\api\Landis_SpatialModeling.csproj" />
+    <ProjectReference Include="..\..\..\Library-Utilities\src\Landis.Utilities.csproj" />
+    <ProjectReference Include="..\..\..\Library-Metadata\src\Metadata.csproj" />
+  </ItemGroup>
+<!--<ItemGroup>
     <PackageReference Include="Landis.Core" Version="3.0.1" />
     <PackageReference Include="Landis.Core.Implementation" Version="3.0.1" />
     <PackageReference Include="Landis.Extensions.Dataset" Version="2.0.1" />
@@ -56,16 +67,16 @@
     <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
     <PackageReference Include="System.Threading" Version="4.3.0" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Landis.Library.Metadata-v2">
+      <HintPath>lib\Landis.Library.Metadata-v2.dll</HintPath>
+    </Reference>
+  </ItemGroup>-->
 
   <ItemGroup>
     <ProjectReference Include="..\..\Tool-Extension-Admin\src\Extension_Admin.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Reference Include="Landis.Library.Metadata-v2">
-      <HintPath>lib\Landis.Library.Metadata-v2.dll</HintPath>
-    </Reference>
-  </ItemGroup>
 
    <ItemGroup>
      <Folder Include="Properties\" />

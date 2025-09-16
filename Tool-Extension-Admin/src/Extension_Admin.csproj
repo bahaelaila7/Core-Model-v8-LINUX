@@ -28,6 +28,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\..\Library-Core\src\Core\Landis.Core.csproj"/>
+    <ProjectReference Include="..\..\..\Library-Datasets\src\Extension_Dataset.csproj"/>
+    <ProjectReference Include="..\..\..\Library-Spatial\src\api\Landis_SpatialModeling.csproj"/>
+    <ProjectReference Include="..\..\..\Library-Utilities\src\Landis.Utilities.csproj"/>
+  </ItemGroup>
+<!--<ItemGroup>
     <PackageReference Include="Landis.Core" Version="3.0.1" />
     <PackageReference Include="Landis.Extensions.Dataset" Version="2.0.1" />
     <PackageReference Include="Landis.SpatialModeling" Version="2.0.1" />
@@ -40,7 +46,7 @@
     <PackageReference Include="System.Runtime.Extensions" Version="4.3.1" />
     <PackageReference Include="System.Runtime.InteropServices" Version="4.3.0" />
     <PackageReference Include="System.Threading" Version="4.3.0" />
-  </ItemGroup>
+  </ItemGroup>-->
 
   <ItemGroup>
     <None Update="app.config">
